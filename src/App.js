@@ -33,9 +33,10 @@ import OeLogout from './Component/Oemodule/OeLogout'
 function App() {
   return (
     <div className="App">
-      <h3>
-        <Navbar />
+      <>
+       
         <BrowserRouter>
+        <Navbar />
           <Routes>
             {/* layout */}
             <Route path='/home' element={<Home />}></Route>
@@ -74,7 +75,7 @@ function App() {
             <Route path='/cmdelete' element={<Cmdelete/>}></Route>
           </Routes>
         </BrowserRouter>
-      </h3>
+      </>
     </div>
   );
 }

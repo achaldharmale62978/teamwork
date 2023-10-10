@@ -5,29 +5,29 @@ import Home from './Component/Layout/Home';
 import Navbar from './Component/Layout/Navbar/Navbar';
 
 // import Navbar from './component/layout/Navbar';
-import Login from './component/pages/Login';
-import Sidebar from './component/pages/Sidebar';
-import EnqueryForm from './component/Recontent/EnqueryForm';
-import EnqueryList from './component/Recontent/EnqueryList';
-import Reupdate from './component/Recontent/Reupdate';
-import Redelete from './component/Recontent/Redelete';
-// import ReLogout from './Component/Remodule/ReLogout';
+import Login from './Component/Login/Login';
+import Sidebar from './Component/Sidebar/Sidebar';
+import EnqueryForm from './Component/Remodule/EnqueryForm';
+import EnqueryList from './Component/Remodule/EnqueryList';
+import Reupdate from './Component/Remodule/Reupdate';
+import Redelete from './Component/Remodule/Redelete';
 import Oepage from './Component/Oemodule/Oepage';
-import Oeenquerylist from './component/OeModule/Oeenquerylist';
+import Oeenquerylist from './Component/Oemodule/Oeenquerylist';
 
 
-import CibilReg from './component/OeModule/CibilReg';
-// import CibilDelete from './Component/Remodule/cibil/CibilDelete';
-import CibilStatus from './component/Recontent/CibilStatus';
-import Cmpage from './component/Cmmodule/Cmpage';
-import Cmlist from './component/Cmmodule/Cmlist';
-import Registration from './component/Recontent/Registration';
-import Cmdelete from './component/Cmmodule/Cmdelete';
-import Cmupdate from './component/Cmmodule/Cmupdate';
+import CibilReg from './Component/Remodule/cibilmodule/CibilReg';
+import CibilDelete from './Component/Remodule/cibilmodule/CibilDelete';
+import CibilStatus from './Component/Remodule/cibilmodule/CibilStatus';
+import Registration from './Component/Remodule/cibilmodule/Registration';
 
-import Cmlogout from './component/Cmmodule/Cmlogout';
+import Cmpage  from './Component/Cmmodule/Cmpage';
+import Cmlist from './Component/Cmmodule/Cmlist';
+import Cmdelete from './Component/Cmmodule/Cmdelete';
+import Cmupdate from './Component/Cmmodule/Cmupdate';
+
+import Cmlogout from './Component/Cmmodule/Cmlogout';
 import ReLogout from './Component/Remodule/ReLogout';
-import OeLogout from './component/Oemodule/OeLogout';
+import OeLogout from './Component/Oemodule/OeLogout'
 
 
 function App() {
@@ -58,6 +58,8 @@ function App() {
             {/* cibil */}
             <Route path='/cibilstatus' element={<CibilStatus />}></Route>
             <Route path='/cibildelete' element={<CibilDelete />}></Route>
+            <Route path='/registration' element={<Registration/>}></Route>
+            <Route path='/cibilreg' element={<CibilReg/>}></Route>
 
             {/* oe module */}
             <Route path='/oeenquerylist' element={<Oeenquerylist />}></Route>
@@ -67,7 +69,9 @@ function App() {
             {/* cm module */}
             <Route path='/cmlist' element={<Cmlist />}></Route>
             <Route path='/cmlogout' element={<Cmlogout />}></Route>
-
+            <Route path='/cmpage' element={<Cmpage/>}></Route>
+            <Route path='/cmupdate' element={<Cmupdate/>}></Route>
+            <Route path='/cmdelete' element={<Cmdelete/>}></Route>
           </Routes>
         </BrowserRouter>
       </h3>
